@@ -1,0 +1,90 @@
+body {
+    margin: 3px;
+    border: red solid 3px;
+    background: cornsilk;
+}
+
+h1 {
+    margin: 8px;
+    border: green solid 3px;
+}
+
+p {
+    margin: 8px;
+    border: yellow solid 3px;
+}
+
+img {
+    margin: 8px;
+    border: pink solid 3px;
+}
+
+h2 {
+    margin: 8px;
+    border: green solid 3px;
+}
+
+ul {
+    margin: 3px;
+    border: skyblue solid 3px;
+}
+
+li {
+    margin: 3px;
+    border: blue solid 3px;
+    text-decoration: underline;
+}
+
+ol {
+    list-style: none;
+    margin: 3px;
+    border: darkmagenta solid 3px;
+}
+
+.someh3 {
+    color: aqua;
+    text-align: center;
+    font-size: 40px;
+    background-color: silver;
+}
+
+.someh1 {
+    background-color: yellow;
+}
+
+.image {
+    width: 600px;
+    height: 500px;
+    border-radius: 90px;
+}
+
+.divforimage {
+    margin-left: 500px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.somepeshka1 {
+    background-color: aqua;
+    text-align: center;
+}
+
+#strooong {
+    font-size: 30px;
+}
+
+.p2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.strongs {
+    background-color: cornflowerblue;
+}
+.ashka{
+    font-size: 25px;
+    background-color: red;
+    color: chartreuse;
+}
