@@ -52,14 +52,20 @@ ol {
     background-color: yellow;
 }
 
-.image {
+.image1 {
     width: 600px;
     height: 500px;
     border-radius: 90px;
 }
-
+.image2 {
+    width: 600px;
+    height: 500px;
+    border-radius: 60%;
+    border: orange solid 3px;
+}
 .divforimage {
-    margin-left: 500px;
+    margin-left: 200px;
+    display: flex;
 }
 
 ul {
