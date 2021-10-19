@@ -1,0 +1,30 @@
+.wrap{
+    height: 600px;
+    background-color: #c1cb91;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /*border: white solid 2px;*/
+}
+.header{
+    height: 10%;
+    background-color: cyan;
+}
+.wrap1{
+    height: 100%;
+}
+.hero{
+height: 50%;
+    background-color:plum;
+}
+.sidebar{
+    height: 50%;
+    background-color:#8fa440;
+}
+.wrap11{
+    height: 60%;
+    width: 30%;
+}

@@ -1,0 +1,38 @@
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.A{
+    height: 20%;
+    background-color: #4b88fc;
+}
+.wrap{
+    height: 700px;
+    background-color: grey;
+}
+.wrapBCDE{
+    width: 70%;
+    height: 100%;
+}
+.B{
+    background-color: #e738c8;
+    height: 50%;
+}
+.CDE{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+.box{
+    background-color: red;
+    width: 33%;
+}
+.wrapBCDEF{
+    height: 80%;
+    display: flex;
+    background-color: bisque;
+}
+.F{
+    width: 30%;
+}
