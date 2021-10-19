@@ -1,0 +1,30 @@
+.wrap{
+    height: 700px;
+
+}
+.widgets{
+    height: 20%;
+    background-color: #4b88fc;
+}
+.somewidgets{
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25%;
+
+    display: flex;
+}
+.contact{
+    height: 55%;
+    background-color: #4b88fc;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 33%;
+    background-color: #004196;
+
+}

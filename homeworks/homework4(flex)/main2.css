@@ -1,0 +1,45 @@
+.hf {
+    height: 15%;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    width: 20%;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap1 {
+    width: auto;
+    height: 70%;
+    background: red;
+    display: flex;
+}
+
+.wrap2 {
+    width: 80%;
+    flex-direction: column;
+}
+
+.post {
+    background: rgb(128, 225, 255);
+    height: 50%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    width: auto;
+    height: 700px;
+    background: grey;
+}

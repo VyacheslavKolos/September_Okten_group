@@ -1,0 +1,35 @@
+.wrap{
+    height: 600px;
+
+}
+.header{
+    height: 20%;
+    background-color: #4b88fc;
+}
+.somewidgets{
+    justify-content: space-between;
+    height: 65%;
+    display: flex;
+}
+.footer{
+    height: 15%;
+    background-color: #4b88fc;
+}
+.nav{
+    height: 15%;
+    background-color: #003293;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.box1{
+    width: 70%;
+    background-color: #8fa440;
+}
+.box2{
+    width: 30%;
+    background-color: #e738c8;
+}

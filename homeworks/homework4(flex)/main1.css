@@ -1,0 +1,39 @@
+body {
+    border: black solid 3px;
+}
+
+.A {
+    background-color: gray;
+    margin: 10px;
+}
+
+.wrapForBC {
+    display: flex;
+    margin: 10px;
+    min-height: 200px;
+}
+
+.B {
+    background-color: gray;
+    margin-right: 5px;
+    width: 70%;
+}
+
+.C {
+    background-color: gray;
+    margin-left: 5px;
+    width: 30%;
+}
+
+h2 {
+
+    text-align: center;
+    margin: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
