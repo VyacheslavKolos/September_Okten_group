@@ -1,0 +1,77 @@
+.project__wrap {
+    height: 600px;
+    background-color: grey;
+}
+
+.grayBlock {
+    background-color: grey;
+    height: 45%;
+}
+
+.bluesolid {
+    border: #4b88fc solid 3px;
+    height: 95%;
+    width: 95%;
+    border-radius: 15%;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexspace-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wh150 {
+    width: 150px;
+    height: 150px;
+    background-color: #00193f;
+    border-radius: 15%;
+}
+
+.wrapforquads {
+
+    width: 100%;
+    height: 80%;
+}
+
+.wrapfortext {
+    height: 20%;
+    width: 100%;
+}
+
+.darkblueblock {
+    background-color: #000046;
+    height: 45%;
+}
+
+.greysolid {
+    border: gray solid 3px;
+    height: 95%;
+    width: 95%;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.roundAndText {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+}
+
+.wh150rad50 {
+
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 50%;
+}
