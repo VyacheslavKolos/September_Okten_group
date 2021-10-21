@@ -1,0 +1,34 @@
+.project__wrap{
+    height: 600px;
+}
+.project__wrap__header_color-blue {
+    height: 20%;
+    background-color: #4b88fc;
+}
+.project__wrap__wrapForMainAndAside{
+    justify-content: space-between;
+    height: 65%;
+    display: flex;
+}
+.project__wrap__footer_color-blue{
+    height: 15%;
+    background-color: #4b88fc;
+}
+.project__wrap__someinfo_color-blue{
+    height: 15%;
+    background-color: #003293;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.project__wrap__wrapForMainAndAside__main_color-green{
+    width: 70%;
+    background-color: #8fa440;
+}
+.project__wrap__wrapForMainAndAside__aside_color-pink{
+    width: 30%;
+    background-color: #e738c8;
+}

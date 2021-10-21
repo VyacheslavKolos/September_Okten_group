@@ -1,0 +1,41 @@
+body {
+    border: black solid 3px;
+}
+
+.task__wrap__blockA {
+    background-color: gray;
+    margin: 10px;
+}
+
+.wrapForBC {
+    display: flex;
+    margin: 10px;
+    min-height: 200px;
+    border: black solid 3px;
+}
+
+.wrapForBC__blockB{
+    background-color: gray;
+    margin-right: 5px;
+    width: 70%;
+}
+
+.wrapForBC__blockC {
+    background-color: gray;
+    margin-left: 5px;
+    width: 30%;
+}
+
+h2 {
+
+    text-align: center;
+    margin: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+

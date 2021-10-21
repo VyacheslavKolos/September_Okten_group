@@ -1,0 +1,30 @@
+.project__wrap{
+    height: 700px;
+
+}
+.project__wrap__header{
+    height: 20%;
+    background-color: #4b88fc;
+}
+.project__wrap__morewidgets{
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25%;
+    display: flex;
+}
+.project__wrap__moreinfo{
+    height: 55%;
+    background-color: #4b88fc;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+.project__wrap__morewidgets div{
+    background-color: #004196;
+    width: 33%;
+}
+/**/

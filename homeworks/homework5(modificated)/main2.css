@@ -1,0 +1,46 @@
+.hf_color-greenyellow {
+    height: 15%;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project__wrap__blockWithMenuAndPost__menu_color-pink {
+    width: 20%;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__wrap__blockWithMenuAndPost {
+    width: auto;
+    height: 70%;
+    background: red;
+    display: flex;
+}
+
+.project__wrap__blockWithPost{
+    width: 80%;
+    flex-direction: column;
+
+}
+
+.post_color-cyan {
+    background: rgb(128, 225, 255);
+    height: 50%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__wrap {
+    width: auto;
+    height: 700px;
+    background: grey;
+}
