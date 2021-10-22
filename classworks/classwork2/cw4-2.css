@@ -1,16 +1,88 @@
-.project__wrap {
-    height: 600px;
-    background-color: grey;
+
+.right__upper-icons {
+    height: 30px;
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 35px;
 }
 
+.icon {
+    height: 4px;
+    width: 15px;
+    background-color: #000046;
+    border-radius: 20%;
+}
+
+/*--------*/
+.header {
+    height: 300px;
+}
+
+.header__top__wrap {
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__logo {
+    height: 30px;
+    width: 60px;
+    background-color: #000046;
+    border-radius: 10%;
+    margin-left: 90px;
+}
+
+.header__top__upper-icons {
+    height: 60px;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 35px;
+}
+
+.header__top__upper-icon {
+    height: 6px;
+    width: 60px;
+    background-color: #000046;
+    border-radius: 20%;
+}
+.header__top__main{
+    height: 240px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__top__main p{
+    padding: 0 90px;
+    text-align: center;
+    width: 80%;
+}
+.header__top__main button{
+    border-radius: 30%;
+    width: 180px;
+    height: 40px;
+    background-color: #000046;
+    color: #fff;
+    cursor: pointer;
+}
+/*--------*/
 .grayBlock {
     background-color: grey;
-    height: 45%;
+    height: 300px;
 }
 
 .bluesolid {
     border: #4b88fc solid 3px;
-    height: 95%;
+    height: 285px;
     width: 95%;
     border-radius: 15%;
     flex-direction: column;
@@ -38,17 +110,19 @@
 .wrapforquads {
 
     width: 100%;
-    height: 80%;
+    height: 230px;
 }
 
 .wrapfortext {
-    height: 20%;
+    height: 30px;
     width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .darkblueblock {
     background-color: #000046;
-    height: 45%;
+    height: 250px;
 }
 
 .greysolid {
@@ -57,7 +131,7 @@
     width: 95%;
     border-radius: 15%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
 
 }
 
@@ -66,6 +140,9 @@
     flex-direction: column;
     width: 33%;
     height: 100%;
+    align-items: center;
+    margin-top: 20px;
+    color: grey;
 }
 
 .wh150rad50 {
@@ -75,3 +152,5 @@
     background-color: gray;
     border-radius: 50%;
 }
+
+/*-------------*/
