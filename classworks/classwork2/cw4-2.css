@@ -23,7 +23,7 @@
 
 .header__top__wrap {
     display: flex;
-    background-color: gray;
+    background-color: #afafaf;
     align-items: center;
     justify-content: space-between;
 
@@ -39,7 +39,7 @@
 
 .header__top__upper-icons {
     height: 60px;
-    background-color: gray;
+    background-color: #afafaf;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -80,7 +80,7 @@
 
 /*--------*/
 .grayBlock {
-    background-color: grey;
+    background-color: #afafaf;
     height: 300px;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .greysolid {
-    border: gray solid 3px;
+    border: #afafaf solid 3px;
     height: 95%;
     width: 95%;
     border-radius: 15%;
@@ -146,21 +146,21 @@
     height: 100%;
     align-items: center;
     margin-top: 20px;
-    color: grey;
+    color: #afafaf;
 }
 
 .wh150rad50 {
 
     width: 150px;
     height: 150px;
-    background-color: gray;
+    background-color: #afafaf;
     border-radius: 50%;
 }
 
 /*-------------*/
 .content {
     height: 1100px;
-    background-color: grey;
+    background-color: #afafaf;
 }
 
 .content > h3 {
@@ -218,7 +218,7 @@
 
 .content__top__wrap {
     display: flex;
-    background-color: gray;
+    background-color: #afafaf;
     align-items: center;
     height: 100%;
     justify-content: space-between;
@@ -235,7 +235,7 @@
 }
 
 .content__top__upper-icons {
-    background-color: gray;
+    background-color: #afafaf;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -272,7 +272,7 @@
 }
 
 .secondblock {
-    background-color: #003293;
+    background-color: aqua;
     height: 80%;
     width: 40%;
     display: flex;
@@ -329,7 +329,7 @@
 }
 
 .linkk {
-    background-color: gray;
+    background-color: #afafaf;
     width: 5%;
     height: 44%;
     border-radius: 27%;
