@@ -1,0 +1,81 @@
+
+/*--------*/
+.grayBlock {
+    background-color: #afafaf;
+    height: 300px;
+}
+
+.bluesolid {
+    border: #4b88fc solid 3px;
+    height: 90%;
+    width: 95%;
+    border-radius: 15%;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexspace-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wh150 {
+    width: 150px;
+    height: 150px;
+    background-color: #00193f;
+    border-radius: 15%;
+}
+
+.wrapforquads {
+
+    width: 100%;
+    height: 66%;
+}
+
+.wrapfortext {
+    height: 10%;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.darkblueblock {
+    background-color: #000046;
+    height: 250px;
+}
+
+.greysolid {
+    border: #afafaf solid 3px;
+    height: 95%;
+    width: 95%;
+    border-radius: 15%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.roundAndText {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    align-items: center;
+    margin-top: 20px;
+    color: #afafaf;
+}
+
+.wh150rad50 {
+
+    width: 150px;
+    height: 150px;
+    background-color: #afafaf;
+    border-radius: 50%;
+}
+
+/*-------------*/
