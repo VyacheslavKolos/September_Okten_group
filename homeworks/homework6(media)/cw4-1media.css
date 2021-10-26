@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    .grayBlock {
+        height: 600px;
+    }
+
+    .bluesolid {
+    }
+
+    .quadAndText {
+        width: 40%;
+        margin-left: 8%;
+    }
+
+    .wh150 {
+        width: 80%;
+        height: 78%;
+    }
+
+    .wrapforquadsAndText {
+        width: 100%;
+        height: 81%;
+        flex-wrap: wrap;
+    }
+
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+}

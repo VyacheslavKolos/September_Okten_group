@@ -19,30 +19,28 @@
     align-items: center;
 }
 
-.flexspace-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .wh150 {
-    width: 150px;
-    height: 150px;
+    width: 61%;
+    height: 100%;
     background-color: #00193f;
     border-radius: 15%;
 }
-
-.wrapforquads {
-
-    width: 100%;
-    height: 66%;
+.quadAndText{
+width: 100%;
+    height: 100%;
 }
-
+.wrapforquadsAndText{
+    display: flex;
+    width: 100%;
+    height:  59%;
+    justify-content: space-around;
+    margin-left: 9%;
+}
 .wrapfortext {
     height: 10%;
     width: 100%;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: -45px;
 }
 
 .darkblueblock {
