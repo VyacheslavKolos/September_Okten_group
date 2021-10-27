@@ -57,163 +57,169 @@ table {
     padding: 0 20px;
 }
 
-.header__top {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .header {
     height: 100vh;
-    position: relative;
     background: url("../image/bg.png") no-repeat center/cover;
+    position: relative;
 }
 
-.header__menu {
+.header__top {
     display: flex;
-    justify-content: center;
     align-items: center;
-    column-gap: 35px;
-}
-
-.nav {
-    display: flex;
-    column-gap: 20px;
-    align-items: center
-}
-
-.nav__item img {
-    width: 20px;
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
 .nav__item a {
-    width: 20px;
-    font-weight: bold;
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.border {
-    border-left: solid 2px white;
-    padding-left: 22px;
+.header__menu {
+
 }
 
-.header__phone {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    width: 155px;
+.nav {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
 }
 
-.header__contact p {
-    font-weight: normal;
+.nav a {
+
+}
+
+.nav__item img {
+    width: 20px;
+}
+
+.wrap__menuAndPhone {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header__phone p {
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
 }
 
-.header__contact {
+.header__phone {
+    display: flex;
+    flex-direction: column;
+    width: 155px;
+    border-left: white solid 2px;
+    padding-left: 22px;
+}
+
+.phone_number {
+    display: flex;
+}
+
+.header__button {
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #FF7400;
+    padding: 14px 18px;
+}
+
+.phoneAndBtn {
     display: flex;
     column-gap: 45px;
     align-items: center;
 }
 
-.header__button {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FFFFFF;
-    background-color: #FF7400;
-    padding: 0 19px;
-    height: 47px;
-    border: none;
-    cursor: pointer;
-}
-
-.header__title {
-    color: #D67E35;
-    font-weight: normal;
-    margin-top: 203px;
-    max-width: 500px;
-    text-align: center;
+.header__main {
+    padding-top: 204px;
+    padding-left: 175px;
     display: flex;
     flex-direction: column;
 }
 
-
-.header__title h2 {
-    font-size: 50px;
-    line-height: 57px;
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    align-items: center;
 }
 
-.header__title h1 {
+.header__main h2 {
     font-size: 50px;
     line-height: 57px;
+    color: #D67E35;
 }
 
-.header__title p {
+.header__main h1 {
+    font-size: 80px;
+    line-height: 92px;
+    color: #D67E35;
+}
+
+.header__main p {
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
-display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 12px;
 }
 
-.header__title p::before, .header__title p:after {
+.header__main p:before, .header__main p:after {
     content: "";
     display: block;
     width: 61px;
     height: 2px;
-    background-color: #C4C4C4;
+    background: #C4C4C4;
 }
-.header__title p::before{
+
+.header__main p::before {
     margin-right: 10px;
 }
-.header__title p:after{
+
+.header__main p:after {
     margin-left: 10px;
 }
- .header__main .header__button{
-     margin-top: 35px;
- }
-.nav__btn__mobile{
-   display: none;
 
+.main__btn {
+    padding-top: 21px;
 }
-.nav__btn__mobile div{
-    height: 3px;
-    background-color: #FF7400;
-}
-.header__down{
+
+.header__down {
     display: flex;
     column-gap: 31px;
     position: absolute;
     bottom: -221px;
+    margin-left: 166px;
 }
-.box{
+
+.down__item {
+    background-color: #fff;
     width: 349px;
     height: 328px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: #FFFFFF;
 }
-.box h3{
+.down__item img{
+   margin-top: 35px;
+}
+.down__item span{
+    color: #bc9060;
+}
+.down__item h3 {
     font-size: 26px;
     line-height: 30px;
     color: #2C2C2C;
+
 }
-.box p{
-    margin-top: 20px;
+
+.down__item p {
     font-size: 26px;
     line-height: 30px;
     text-align: center;
     color: #656363;
+    padding-top: 20px;
 }
-
-/**/
