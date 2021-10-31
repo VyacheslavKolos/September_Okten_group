@@ -63,6 +63,7 @@
 
     .wrapForHotCold {
         margin-top: 550px;
+        flex-direction: column-reverse;
     }
 
     .two-color-lines__text h3 {
@@ -80,12 +81,14 @@
         color: #45494F;
 
     }
-.row1{
-display: flex;
-    flex-direction: column-reverse!important;
-}
+
+    .row1 {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+
     .row2 {
 
-        flex-direction: column-reverse!important;
+        flex-direction: column-reverse !important;
     }
 }
