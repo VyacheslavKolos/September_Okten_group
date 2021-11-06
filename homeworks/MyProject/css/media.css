@@ -438,12 +438,18 @@
         position: fixed;
         background-color: white;
         bottom: 0;
+        z-index: 99999;
     }
 
     .header {
         position: relative;
     }
-    .media-ff-none{
+
+    .media-ff-none {
         display: flex;
+    }
+
+    .formenu {
+        height: 60px;
     }
 }
