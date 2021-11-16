@@ -2,12 +2,27 @@
 // //     - з 5 числових значень
 // let numbArr=[1,2,-3,0,100];
 // console.log(numbArr);
+// console.log(numbArr[0])
+// console.log(numbArr[1])
+// console.log(numbArr[2])
+// console.log(numbArr[3])
+// console.log(numbArr[4])
 // // - з 5 стічкових значень
 // let numbStr=['sdsd',"qwerty", 'HELLO','Pizza','21'];
 // console.log(numbStr);
+// console.log(numbStr[0])
+// console.log(numbStr[1])
+// console.log(numbStr[2])
+// console.log(numbStr[3])
+// console.log(numbStr[4])
 // // - з 5 значень стрічкового, числового та булевого типу
 // let arr=[true,"qwerty", false,'Pizza',21];
 // console.log(arr);
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+// console.log(arr[3])
+// console.log(arr[4])
 // // - та вивести його в консоль
 
 
