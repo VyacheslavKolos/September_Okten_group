@@ -321,12 +321,13 @@
 //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
 //     },
 // ];
-//
 // document.write('<div>')
-// for (let i = 0; i < products.length; i++) {
+// for (const product of products) {
 //     document.write('<div>')
-//     document.write(`<h3>${products[i]['title']}. Price - ${products[i]['price']}</h3>`)
-//     document.write(`<img src="${products[i]['image']}" alt="sd"/>`)
+//     document.write(`<h3>${product['title']}. Price - ${product['price']}</h3>`)
+//     document.write(`<img src="${product['image']}" alt="sd"/>`)
 //     document.write('</div>')
 // }
 // document.write('</div>')
+
+
