@@ -26,16 +26,35 @@
 //     [2,3,4,5]
 // результат
 //     [3,5,7,9]
+//
 // function concatArr(arr, arr1) {
-//     let newArr=[];
-//     for (let i = 0; i < arr.length; i++) {
-//         newArr[i]=arr[i]+arr1[i];
+//     let newArr = [];
+//     let n = arr.length
+//     if (arr.length<arr1.length){
+//         n=arr1.length;
+//         for (let i = 0; i <= arr1.length; i++) {
+//             if (arr.length!==arr1.length){
+//                 arr.push(0);
+//             }else {break;}
+//         }
+//     }
+//     if (arr.length>arr1.length){
+//         n=arr.length;
+//         for (let i = 0; i <= arr.length; i++) {
+//             if (arr1.length!==arr.length){
+//                 arr1.push(0);
+//             }else {break;}
+//         }
+//     }
+//     for (let i = 0; i < n; i++) {
+//         newArr[i] = arr[i] + arr1[i];
 //     }
 //     return newArr;
 // }
-// arr=[1,2,3,4];
-// arr1=[2,3,4,5];
-// let resultConcatArr=concatArr(arr,arr1);
+//
+// arr = [1, 2, 3, 4,4,5,6];
+// arr1 = [2, 3, 4, 5,2];
+// let resultConcatArr = concatArr(arr, arr1);
 // console.log(resultConcatArr);
 
 
