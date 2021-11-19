@@ -35,7 +35,7 @@
 //         for (let i = 0; i <= arr1.length; i++) {
 //             if (arr.length!==arr1.length){
 //                 arr.push(0);
-//             }else {break;}
+//             }
 //         }
 //     }
 //     if (arr.length>arr1.length){
@@ -43,7 +43,7 @@
 //         for (let i = 0; i <= arr.length; i++) {
 //             if (arr1.length!==arr.length){
 //                 arr1.push(0);
-//             }else {break;}
+//             }
 //         }
 //     }
 //     for (let i = 0; i < n; i++) {
@@ -52,8 +52,8 @@
 //     return newArr;
 // }
 //
-// arr = [1, 2, 3, 4,4,5,6];
-// arr1 = [2, 3, 4, 5,2];
+// arr = [1, 2, 3, 4,4];
+// arr1 = [2, 3, 4, 5,2,9,10];
 // let resultConcatArr = concatArr(arr, arr1);
 // console.log(resultConcatArr);
 
