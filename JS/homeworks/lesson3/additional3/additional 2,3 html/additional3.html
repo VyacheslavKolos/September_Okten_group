@@ -7,17 +7,24 @@
 <style>
     h3{
         font-size: 10px;
+        margin: 0;
+    }
+    p{
+        margin: 0;
     }
     .wrap{
         display: grid;
-        background-color: #4b88fc;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+
     }
-    .post-card{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
+        .post-card{
+            margin: 30px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+
 </style>
 <body>
 
@@ -629,8 +636,8 @@
     document.write('<div class="wrap">')
     for (let i = 0; i < usersList.length; i++) {
       document.write("<div class='post-card'>")
-        document.write(`<h3>ID- ${usersList[i].id}  ${usersList[i].title} </h3`)
-        document.write(`<p>${usersList[i].body}</p`)
+        document.write(`<h3>ID- ${usersList[i].userId}  ${usersList[i].title} </h3>`)
+        document.write(`<p>${usersList[i].body}</p>`)
         document.write('</div>')
     }
     document.write('</div>')
