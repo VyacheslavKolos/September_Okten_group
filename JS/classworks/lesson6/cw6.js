@@ -1,4 +1,4 @@
-// - Дано список імен.
+    // - Дано список імен.
 // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
@@ -109,15 +109,3 @@ let coursesAndDurationArray = [
 // console.log(filtereD);
 
 
-// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
-// document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
-let cutString = (str, n) => {
-    let newArr=[]
-    for (let i = 0; i < str.length; i++) {
-        newArr.push(str.substr(0,n))
-        str=str.slice(n)
-    }
-    console.log(newArr);
-    return newArr
-}
-console.log(cutString("Привітsdsdd", 3));

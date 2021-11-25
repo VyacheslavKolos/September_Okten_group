@@ -54,10 +54,10 @@
 
 // - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами.
 // При цьому всі символи рядка необхідно перевести у верхній регістр.
-//     let str = "HTML JavaScript PHP";
+//     let str = "HTML JavaScript PHP hi";
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
-// let str = "HTML JavaScript PHP";
-// const insert_dash = str => str.replaceAll(" ","-");
+// let str = "HTML JavaScript PHP ";
+// const insert_dash = str => str.toUpperCase().replaceAll(" ","-");
 // document.writeln(insert_dash(str));
 
 
