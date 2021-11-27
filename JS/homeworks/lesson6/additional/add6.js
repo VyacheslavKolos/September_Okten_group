@@ -57,7 +57,7 @@
 //         }
 //     } else console.log("Щось не те! @>1")
 // }
-// postValidator("some.email@gmail.com")
+// postValidator("sdsd@sdd.com")
 
 
 // - є масив
