@@ -43,6 +43,7 @@ let clients = [{id: 1, name: 'Sofa', surname: 'Sonce', email: 'sofasonce0@gmail.
     {id: 9, name: 'Sofa', surname: 'Sonce', email: 'sofasonce8@gmail.com', phone: '+38095224128', order: ["kokos",]},
     {id: 10, name: 'Sofa', surname: 'Sonce', email: 'sofasonce9@gmail.com', phone: '+38095224129', order: ["kokos",]}];
 
+
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 clientsSorted=clients.sort((a, b) => a.order.length-b.order.length)
 console.log(clientsSorted);

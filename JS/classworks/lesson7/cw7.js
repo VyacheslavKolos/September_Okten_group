@@ -86,7 +86,6 @@ class Prince extends Popelushka{
         console.log(popelbki.find(value => value.footSize === prince.footSize));
     }
 }
-
 let prince=new Prince("Max",18,37)
 console.log(prince);
 prince.find();
