@@ -89,3 +89,14 @@ class Prince extends Popelushka{
 let prince=new Prince("Max",18,37)
 console.log(prince);
 prince.find();
+
+
+
+class Class {
+    constructor(name, age, work) {
+        this.name = name;
+        this.age = age;
+        this.work = work;
+    }
+}
+
