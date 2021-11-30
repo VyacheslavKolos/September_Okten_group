@@ -21,7 +21,7 @@ idRules.innerText="My own rules"
 
 
 // -- змініть кожному елементу колір фону на червоний
-let allElements= document.body.getElementsByTagName("*");
+let allElements= document.body.children;
 for (const allElement of allElements) {
     allElement.style.backgroundColor="red"
 }
