@@ -89,7 +89,6 @@
 
 //     Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
-
 let pText = document.createElement('p');
 pText.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus dolor non omnis optio quibusdam quos ratione saepe vel vero. Ad esse fuga laboriosam, maxime nesciunt repudiandae vero? Animi assumenda blanditiis doloremque eaque eos fuga harum hic ipsam, minus nam odit qui, similique, totam ut voluptate. Et minima nisi repellendus.'
 document.body.appendChild(pText);
@@ -100,7 +99,5 @@ pText.addEventListener('click', function () {
     let index;
     index = pText.innerText.indexOf(str)
     pText.innerHTML = pText.innerText.substring(0, index) + `<span style="font-weight: bold">${str}</span>` + pText.innerText.substring(index + str.length)
-
-
 });
 
