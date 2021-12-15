@@ -14,16 +14,17 @@
 
 // -створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
-// let autoForm=document.getElementById("auto");
-// let btnSend=document.getElementById('send');
-// let autoArr=[];
-// btnSend.onclick=function (e){
-//     e.preventDefault();
-//     let model=autoForm.model.value;
-//     let type=autoForm.type.value;
-//     let volume=autoForm.type.value;
-//     let auto={model:model, type:type,volume:volume};
-//     autoArr.push(auto);
-//     localStorage.setItem('arr',JSON.stringify(autoArr));
-// }
+let autoForm = document.getElementById("auto");
+let btnSend = document.getElementById('send');
+btnSend.onclick = function (e) {
+    e.preventDefault();
 
+
+    let model = autoForm.model.value;
+    let type = autoForm.type.value;
+    let volume = autoForm.type.value;
+    let auto = {model: model, type: type, volume: volume};
+    let autoArr = JSON.parse(localStorage.getItem("arr")) || [];
+    autoArr.push(auto);
+    localStorage.setItem('arr', JSON.stringify(autoArr));
+}
