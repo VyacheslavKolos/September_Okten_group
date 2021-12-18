@@ -41,7 +41,6 @@
 // console.log(user);
 
 
-
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
 // Поля :
 //     -назва тегу ()
@@ -104,3 +103,136 @@
 // let tag8=new Teg("select","Тег <select> позволяет создать элемент интерфейса в виде раскрывающегося списка, а также список с одним или множественным выбором, как показано далее. ",[{autofocus:"Устанавливает, что список получает фокус после загрузки страницы.",size:"Количество отображаемых строк списка."}]);
 // console.log(tag8);
 
+
+// --closures.pdf----closures.pdf----closures.pdf----closures.pdf----closures.pdf----closures.pdf--
+// function userCard( key,balance = 100, transactionLimit = 100, historyLogs) {
+//     let card = {key, balance, transactionLimit, historyLogs};
+//     return {
+//
+//         getCardOptions: () => {
+//             console.log(card)
+//         },
+//         putCredits: (balance) => {
+//             card.balance = balance
+//         },
+//         takeCredits: (balance) => {
+//             if (card.balance >= balance && card.transactionLimit >= transactionLimit) {
+//                 card.balance -= balance
+//             } else console.error("Недостатньо коштів на рахунку або перевищено ліміт транзакцій!")
+//         },
+//         SetTransactionLimit: (transactionLimit) => {
+//             card.transactionLimit=transactionLimit;
+//         },
+//         transferCredits:(amount,obj)=>{card.balance-=amount;obj.balance+=50;}
+//     }
+// }
+//
+// let card1 = userCard(1,100,100,[]);
+// let card2=userCard(2,100,1000,[]);
+
+let help=[];
+
+let counter=0;
+function userCard(number) {
+    help.push(number);
+
+
+    let card = {key: number, balance: 100, transactionLimit: 100, historyLogs: []};
+
+        return {
+            getCardOptions: () => {
+                console.log(card)
+            },
+            putCredits: (balance) => {
+                card.balance += balance;
+                let date = new Date();
+                historyLog = {
+                    operationType: "Received credits",
+                    credits: balance,
+                    operationTime: `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+                };
+                card.historyLogs.push(historyLog);
+            },
+            takeCredits: (balance) => {
+                if (card.balance >= balance && card.transactionLimit >= balance) {
+                    card.balance -= balance;
+                    card.transactionLimit -= balance;
+                    let date = new Date();
+                    let historyLog = {
+                        operationType: "Withdrawal of credits",
+                        credits: balance,
+                        operationTime: `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+                    };
+                    card.historyLogs.push(historyLog);
+                } else console.error("на карті не вистачає коштів або ліміт транзакцій перевищено!")
+            },
+            SetTransactionLimit: (transactionLimit) => {
+                card.transactionLimit = transactionLimit;
+                let date = new Date();
+                historyLog = {
+                    operationType: "Transaction limit changed",
+                    credits: transactionLimit,
+                    operationTime: `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+                };
+                card.historyLogs.push(historyLog);
+            },
+            transferCredits: (amount, obj) => {
+                if (card.balance >= amount && card.transactionLimit >= amount) {
+                    card.balance -= amount;
+                    card.transactionLimit -= amount;
+                    obj.putCredits(amount);
+                    card.balance -= amount * 0.05;
+                } else console.error("на карті не вистачає коштів або ліміт транзакцій перевищено!")
+            }
+        }
+
+
+}
+
+
+// let card1 = userCard(1);
+// let card2 = userCard(2);
+// card2.putCredits(300);
+// card2.SetTransactionLimit(1000)
+// card2.takeCredits(200)
+// card2.transferCredits(50, card1)
+// card1.getCardOptions();
+// card2.getCardOptions();
+
+
+class UserAccount {
+    constructor(name) {
+        this.name = name;
+        this.cards = [];
+    };
+
+    addCard(numb) {
+        if (numb)
+        if (this.cards.length <= 3) {
+            this.cards.push(userCard(numb))
+        } else console.error("Можна мати максимум 3 картки!")
+    }
+
+    getCardByKey(numb) {
+        if (numb >= 0 && numb <= 3) {
+            return this.cards[numb - 1];
+        }
+    }
+}
+
+let user = new UserAccount("Vasya");
+user.addCard(1);
+user.addCard(2);
+
+let card1 = user.getCardByKey(1);
+let card2 = user.getCardByKey(2);
+
+card1.putCredits(500);
+card1.SetTransactionLimit(800);
+card1.transferCredits(300, card2);
+
+card2.takeCredits(50);
+
+
+card1.getCardOptions();
+card2.getCardOptions()
