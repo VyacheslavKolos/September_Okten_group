@@ -130,7 +130,6 @@
 // let card1 = userCard(1,100,100,[]);
 // let card2=userCard(2,100,1000,[]);
 
-
 function userCard(number) {
     let card = {key: number, balance: 100, transactionLimit: 100, historyLogs: []};
 
