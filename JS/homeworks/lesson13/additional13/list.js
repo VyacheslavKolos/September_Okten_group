@@ -1,26 +1,41 @@
-let tovars = JSON.parse(localStorage.getItem("list"));
-let wrap = document.createElement("div");
-wrap.classList.add("wrap");
-for (const item of tovars) {
-    let tovar = document.createElement("div");
-    tovar.classList.add('tovar');
-    tovar.innerHTML = `<h4>${item.name}, amount - ${item.kilk}, price : ${item.price}</h4> <img src=${item.image} alt="sd">`
-    let deleteTovar = document.createElement("button");
-    deleteTovar.innerText = "delete";
-    deleteTovar.id="deleteTovar";
+const renderList = () => {
+    let tovars = JSON.parse(localStorage.getItem("list"));
 
-    deleteTovar.onclick=function (e) {
-        e.preventDefault();
-        let newTovars=tovars.filter(i => i.id !== item.id)
-        console.log(newTovars);
-        localStorage.setItem(JSON.stringify(newTovars));
+    const container = document.getElementById('list');
+    container.innerHTML = "";
+
+    let wrap = document.createElement("div");
+    wrap.id = "wrap";
+
+    wrap.classList.add("wrap");
+
+    for (const singleTovar of tovars) {
+        const {id: currentTovarId, name, kilk, price, image} = singleTovar;
+
+        let tovar = document.createElement("div");
+
+        tovar.classList.add('tovar');
+        tovar.innerHTML = `<h4>${name}, amount - ${kilk}, price : ${price}</h4> <img src=${image} alt="sd">`
+
+        let deleteTovar = document.createElement("button");
+        deleteTovar.innerText = "delete";
+        deleteTovar.id = "deleteTovar";
+
+        deleteTovar.onclick = function (e) {
+            e.preventDefault();
+            const clearArr = JSON.parse(localStorage.getItem('list')).filter(i => i.id !== currentTovarId)
+
+            localStorage.setItem('list', JSON.stringify(clearArr))
+
+            renderList();
+        }
+
+        wrap.appendChild(tovar);
+        wrap.appendChild(deleteTovar);
     }
 
-
-    wrap.appendChild(tovar);
-    wrap.appendChild(deleteTovar);
+    container.appendChild(wrap);
 }
-document.body.appendChild(wrap);
 
 let deleteBtn = document.getElementById("delete");
 deleteBtn.onclick = function (e) {
@@ -29,16 +44,4 @@ deleteBtn.onclick = function (e) {
     wrap.innerHTML = "";
 }
 
-// let deleteTovar=document.getElementById("deleteTovar");
-
-
-
-// const deleteFunc = (arr) => {
-//     for (const elem of arr) {
-//         let date=new Date();
-//         if (.getTime()){
-//             console.log("true")
-//         }else console.log("not")
-//     }
-// }
-// deleteFunc(tovars);
+renderList();
