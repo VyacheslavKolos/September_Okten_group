@@ -37,5 +37,11 @@ const renderList = () => {
     container.appendChild(wrap);
 }
 
+let deleteBtn = document.getElementById("delete");
+deleteBtn.onclick = function (e) {
+    e.preventDefault();
+    localStorage.clear();
+    wrap.innerHTML = "";
+}
 
 renderList();
