@@ -8,15 +8,14 @@ for (const item of tovars) {
     let deleteTovar = document.createElement("button");
     deleteTovar.innerText = "delete";
     deleteTovar.id="deleteTovar";
-    
+
     deleteTovar.onclick=function (e) {
         e.preventDefault();
-        let date=new Date();
-        if (item.id===date.getTime()){
-            console.log("true");
-        }else console.log("false")
-
+        let newTovars=tovars.filter(i => i.id !== item.id)
+        console.log(newTovars);
+        localStorage.setItem(JSON.stringify(newTovars));
     }
+
 
     wrap.appendChild(tovar);
     wrap.appendChild(deleteTovar);
